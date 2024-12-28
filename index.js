@@ -9,7 +9,7 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3000;
 
-const blobConnectionString =`DefaultEndpointsProtocol=https;AccountName=${process.env.CONNECTION_NAME};AccountKey=u3UvvM1JP4pOYttIa7a2BefSNq17iBc9+yGSAC9o9WSFbUm9tQ/rrMdAy7cj8iMPd1B9Cmq2Y4Zl+ASt0IfJJA==;EndpointSuffix=core.windows.net`
+const blobConnectionString = process.env.BLOB_CONNECTION_STRING;
 const containerName = process.env.CONTAINER_NAME;
 const blobName = process.env.BLOB_NAME;
 const openAIEndpoint = process.env.OPENAI_ENDPOINT;
