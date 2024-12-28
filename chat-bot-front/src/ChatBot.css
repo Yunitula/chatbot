@@ -1,0 +1,119 @@
+/* ChatBot.css */
+
+/* Fullscreen Container */
+.chatbot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+    background: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Chatbox Styling */
+  .chatbox {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    height: 90%;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  /* Messages Container */
+  .messages-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #e5ddd5;
+  }
+  
+  /* Speech Bubble Style */
+  .message {
+    display: flex;
+    margin: 10px 0;
+  }
+  
+  .message.user {
+    justify-content: flex-end;
+  }
+  
+  .message.bot {
+    display: flex; /* Ensures the element is a flex container */
+   justify-content: flex-start; /* Aligns the content to the left */
+   align-items: flex-start; /* Ensures vertical alignment from the top */
+   text-align: left; /* Ensures the text aligns from the left */
+   padding: 10px;
+  }
+  
+  .message-bubble {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background: #dcf8c6;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message.bot .message-bubble {
+    background: #ffffff;
+  }
+  
+  .timestamp {
+    display: block;
+    text-align: right;
+    font-size: 10px;
+    color: #999;
+    margin-top: 5px;
+  }
+  
+  /* Input Container */
+  .input-container {
+    display: flex;
+    padding: 15px;
+    background: #ffffff;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .input-container input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    outline: none;
+    margin-right: 10px;
+    background: #f9f9f9;
+  }
+  
+  .input-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-container button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Scrollbar Styling */
+  .messages-container::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .messages-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
